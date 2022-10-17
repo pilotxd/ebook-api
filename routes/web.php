@@ -18,5 +18,25 @@ Route::get('/', function () {
 });
 
 Route::get('coba', function(){
-    return "halo dek";
+    return "p";
+});
+
+Route::get('coba1', function(){
+    return ['rafa','rafi','rafo'];
+});
+Route::get('coba2', function(){
+    return [
+        'Nama' => 'Veo Rozzan',
+        'NIS' => 3103120186,
+        'Kelas' => 'XII RPL 6'
+    ];
+});
+Route::get('coba3', function(){
+    return response()->json(
+        [
+            'Nama' => 'Veo Rozzan',
+            'Nis' => 3103120186,
+            'Kelas' => 'XII RPL 6'
+        ], 201
+    );
 });
